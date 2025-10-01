@@ -5,6 +5,8 @@
     --cor-principal: #003aa9;
     --cor-texto: #fcfcfc;
     --cor-secundaria: #ffd300;
+    --cor-fundo: #c9c9c9;
+
 }
 
 body {
@@ -12,8 +14,9 @@ body {
     padding: 0px;
     list-style: none;
     font-size: 1.2rem;
+
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--cor-secundaria);
+    
 }
 
 ul,
@@ -72,6 +75,7 @@ a {
 
 .header a {
     color: var(--cor-texto);
+    font-size: 2rem;
     font-weight: 600;
     padding: 10px;
 
@@ -84,7 +88,9 @@ a {
 }
 
 img {
-    vertical-align: middle;
+    /* vertical-align: middle; */
+    max-width: 100%;
+    display: block;
 }
 
 .slideshow-container {
@@ -134,18 +140,26 @@ img {
     background: var(--cor-texto);
 }
 
-.itens {
+/* .itens {
     display: flex;
     flex-wrap: wrap;
     max-width: 1500px;
-    margin: 0 10%;
+    margin: 0 auto;
     background-color: var(--cor-texto);
+} */
+
+.itens{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-gap: 20px
 }
 
-.itens img {
+/* .itens img {
     max-width: 100%;
     display: block;
-}
+} */
 
 
 
@@ -156,12 +170,12 @@ img {
 
 .imagem-container {
     position: relative;
-    /* Necessário para posicionar a legenda */
+  
     display: inline-block;
-    /* Ajusta o tamanho do container à imagem */
-    width: 300px;
-    /* Exemplo de tamanho */
-}
+   
+    width: 90%;
+    
+} 
 
 .legenda {
     position: absolute;
