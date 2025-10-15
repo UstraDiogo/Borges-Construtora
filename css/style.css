@@ -57,26 +57,28 @@ a {
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
-  padding: 2rem;
+  padding: 2vw;
   background-color: var(--cor-principal);
 }
 
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+.menu img {
+  margin: 0 15%;
+}
+
+.collapse li {
+  background-color: var(--cor-principal);
 }
 
 .header img {
-  max-width: 30%;
+  max-width: 20%;
   display: block;
 }
 
 .header a {
   color: var(--cor-texto);
-  font-size: 1.5rem;
+  font-size: 1.7vw;
   font-weight: 600;
   padding: 10px;
 }
