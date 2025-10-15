@@ -204,3 +204,33 @@ span {
 .copyright {
   color: var(--cor-texto);
 }
+
+@media (max-width: 768px) {
+  .legenda p {
+    font-size: 2vw;
+  }
+
+  .header img {
+    max-width: 40%;
+    display: block;
+    margin-bottom: 5%;
+  }
+
+  .header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .header a {
+    font-size: 4vw;
+    padding: 2vw;
+  }
+
+  h1 {
+    font-size: 15vw;
+  }
+
+  .titulos h2 {
+    font-size: 6vw;
+  }
+}
