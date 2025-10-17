@@ -63,10 +63,17 @@ a {
   background-color: var(--cor-principal);
 }
 
+.header button {
+  border: none;
+  background: none;
+}
+
 .menu img {
   margin: 0 15%;
 }
-
+.show {
+  background-color: var(--cor-principal);
+}
 .collapse li {
   background-color: var(--cor-principal);
 }
@@ -78,6 +85,7 @@ a {
 
 .header a {
   color: var(--cor-texto);
+  background-color: var(--cor-principal);
   font-size: 1.7vw;
   font-weight: 600;
   padding: 10px;
@@ -203,6 +211,14 @@ span {
 
 .copyright {
   color: var(--cor-texto);
+}
+
+.about {
+  color: var(--cor-principal);
+  margin: 2%;
+  text-align: justify;
+  font-size: 1vw;
+  line-height: 1.6;
 }
 
 @media (max-width: 768px) {
